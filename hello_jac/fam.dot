@@ -1,0 +1,11 @@
+strict digraph root {
+    "n0" [ label="n0:root"  ]
+    "n1" [ label="n1:man"  ]
+    "n2" [ label="n2:woman"  ]
+    "n3" [ label="n3:man"  ]
+    "n0" -> "n1" [ label="e0" ]
+    "n0" -> "n2" [ label="e1" ]
+    "n3" -> "n1" [ label="e2:dad" ]
+    "n1" -> "n2" [ label="e3:married", dir="both" ]
+    "n3" -> "n2" [ label="e4:mom" ]
+}
